@@ -52,5 +52,15 @@ const articleElementsh3 = document.querySelectorAll(".grid1-1 article");
 // Loop through each article and change the text content of the p element
 articleElementsh3.forEach((article) => {
   const paragraphElement = article.querySelector("h3");
-  paragraphElement.textContent = "New h3.";
+  paragraphElement.textContent = "New h3";
 });
+
+// ændre billederne i begge articles med javascript
+// Query all article elements
+const articleElementsimg = document.querySelectorAll(".grid1-1 article");
+
+// Change the src attribute of the first image
+articleElementsimg[0].querySelector("img").src = "https://picsum.photos/500/600";
+
+// Change the src attribute of the second image
+articleElementsimg[1].querySelector("img").src = "https://picsum.photos/500/600";
