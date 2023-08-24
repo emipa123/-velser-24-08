@@ -14,7 +14,7 @@ console.log(article2Element);
 
 // nærmeste søskende
 // Query selector for the first article element
-const article3Element = document.querySelector("main > .grid1-1 > article:first-child");
+const article3Element = document.querySelector("article+article");
 console.log(article3Element);
 // Query selector for the second article element
 const article4Element = document.querySelector("main > .grid1-1 > article:first-child + article");
